@@ -1,4 +1,4 @@
-What is ruby-oci8
+What is ruby-oci8-david
 =================
 
 Ruby-oci8 is a ruby interface for Oracle Database. The latest version
