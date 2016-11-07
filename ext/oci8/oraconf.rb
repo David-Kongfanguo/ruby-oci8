@@ -442,6 +442,7 @@ EOS
           this_cpu = :i386   # 32-bit little-endian
         end
       else
+        puts 'i am david'
         if is_big_endian
           this_cpu = :ppc64  # 64-bit big-endian
         else
