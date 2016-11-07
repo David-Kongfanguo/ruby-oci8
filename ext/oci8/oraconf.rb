@@ -520,7 +520,7 @@ EOS
           end
         end
       when /darwin/
-        fallback_path = ENV['DYLD_FALLBACK_LIBRARY_PATH']
+        fallback_path = ENV['OCI_DIR']
         if fallback_path.nil?
           puts "  DYLD_FALLBACK_LIBRARY_PATH is not set."
         else
@@ -564,7 +564,7 @@ EOS
           end
         end
         if ld_path.nil?
-          fallback_path = ENV['DYLD_FALLBACK_LIBRARY_PATH']
+          fallback_path = ENV['OCI_DIR']
           if fallback_path.nil?
             fallback_path = "#{ENV['HOME']}/lib:/usr/local/lib:/lib:/usr/lib"
             puts "  checking the default value of DYLD_FALLBACK_LIBRARY_PATH..."
