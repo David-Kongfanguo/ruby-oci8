@@ -433,7 +433,7 @@ EOS
       end
       so_ext = 'sl'
     when /darwin/
-      @@ld_envs = %w[DYLD_LIBRARY_PATH]
+      @@ld_envs = %w[OCI_DIR]
       so_ext = 'dylib'
       if is_32bit
         if is_big_endian
@@ -1064,7 +1064,7 @@ EOS
         end
         so_ext = 'sl'
       when /darwin/
-        ld_path = 'DYLD_LIBRARY_PATH'
+        ld_path = 'OCI_DIR'
         so_ext = 'dylib'
       else
         ld_path = 'LD_LIBRARY_PATH'
