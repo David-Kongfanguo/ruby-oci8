@@ -477,6 +477,9 @@ EOS
     glob_name = "#{oci_basename}.#{so_ext}#{oci_glob_postfix}"
     ld_path = nil
     file = nil
+    puts 'dsadas'
+    puts ENV['OCI_DIR']
+    puts '-------------'
     @@ld_envs.each do |env|
       if ENV[env].nil?
         puts "  #{env} is not set."
