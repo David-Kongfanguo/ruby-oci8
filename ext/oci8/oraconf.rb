@@ -522,6 +522,9 @@ EOS
         end
       when /darwin/
         fallback_path = ENV['OCI_DIR']
+        puts 'dsadas'
+        puts ENV['OCI_DIR']
+        puts '-------------'
         if fallback_path.nil?
           puts "  DYLD_FALLBACK_LIBRARY_PATH is not set."
         else
