@@ -443,6 +443,7 @@ EOS
         end
       else
         puts 'i am david'
+        puts 'ssssssss'
         if is_big_endian
           this_cpu = :ppc64  # 64-bit big-endian
         else
